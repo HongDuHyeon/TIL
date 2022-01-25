@@ -26,4 +26,4 @@ T.I.L
 
 - shift / pop / unshift / push
 
-<a href="https://velog.io/@hongduhyeon/javascript-2.-%EB%B0%98%EB%B3%B5%EB%AC%B8">javascript 01 변수와 상수</a>
+<a href="https://velog.io/@hongduhyeon/javascript-2.-%EB%B0%98%EB%B3%B5%EB%AC%B8">javascript 02 반복문</a>
