@@ -35,8 +35,16 @@
 
 ## ✅ javascript 04 조건문
 
-- 삼항 조건 연산자
-- truthy and falsy
-- 단축 평가 논리 계산법
+- if문
+- if-else문
+- if-else if문
 
 <a href="https://velog.io/@hongduhyeon/javascript-4.-%EC%A1%B0%EA%B1%B4%EB%AC%B8">javascript 04 조건문<a>
+ 
+ ## ✅ javascript 05 함수
+
+- 함수
+- 연습) hello Duhyeon 출력
+- 연습) 점수를 성적등급으로 변환하기
+
+<a href="https://velog.io/@hongduhyeon/javascript-05.-%ED%95%A8%EC%88%98">javascript 05 함수<a>
