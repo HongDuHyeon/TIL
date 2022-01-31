@@ -32,3 +32,11 @@
 - 단축 평가 논리 계산법
 
 <a href="https://velog.io/@hongduhyeon/javascript-3.-%EC%97%B0%EC%82%B0%EC%9E%90">javascript 03 연산자<a>
+
+## ✅ javascript 04 조건문
+
+- 삼항 조건 연산자
+- truthy and falsy
+- 단축 평가 논리 계산법
+
+<a href="https://velog.io/@hongduhyeon/javascript-4.-%EC%A1%B0%EA%B1%B4%EB%AC%B8">javascript 04 조건문<a>
