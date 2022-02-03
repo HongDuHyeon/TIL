@@ -48,3 +48,11 @@
 - 연습) 점수를 성적등급으로 변환하기
 
 <a href="https://velog.io/@hongduhyeon/javascript-05.-%ED%95%A8%EC%88%98">javascript 05 함수<a>
+ 
+ ## ✅ javascript - Templete Literal
+ 
+ - es6 templete literal 예제
+ 
+ <a href="https://velog.io/@hongduhyeon/javascript-Templete-Literal">javascript - Templete Literal</a>
+ 
+ ##### 기초 자바스크립트가 완료되면 폴더로 뺄 예정
