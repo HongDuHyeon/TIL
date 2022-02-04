@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>transform</title>
+    <link rel="stylesheet" type="text/css" href="css/test.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function(){
+
+            // ================================================== Datepicker
+            $('#date').datepicker({
+                dateFormat: 'yy년mm월dd일',
+                showAnim: "slide",
+                showButtonPanel: true,
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],	//한글 캘린더중 월 표시를 위한 부분
+                monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],	//한글 캘린더 요일 표시 부분
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],	//한글 요일 표시 부분
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],	// 한글 요일 표시 부분
+                showMonthAfterYear: true,
+                yearSuffix: '년',
+            });
+
+            $('#ico_date').datepicker({
+                dateFormat: 'yy년mm월dd일',
+                showAnim: "slide",
+                showButtonPanel: true,
+                showOn: "button",
+                buttonImage: "images/calendar.gif",
+                buttonImageOnly: true,
+                buttonText: "Select date",
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],	//한글 캘린더중 월 표시를 위한 부분
+                monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],	//한글 캘린더 요일 표시 부분
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],	//한글 요일 표시 부분
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],	// 한글 요일 표시 부분
+                showMonthAfterYear: true,
+                yearSuffix: '년',
+            });
+            
+            var dateFormat = "mm/dd/yy",
+            from = $( "#from" )
+                .datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                dateFormat: 'yy년mm월dd일',
+                showAnim: "slide",
+                showButtonPanel: true,
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],	//한글 캘린더중 월 표시를 위한 부분
+                monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],	//한글 캘린더 요일 표시 부분
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],	//한글 요일 표시 부분
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],	// 한글 요일 표시 부분
+                showMonthAfterYear: true,
+                yearSuffix: '년',
+                numberOfMonths: 2,
+                })
+                .on( "change", function() {
+                to.datepicker( "option", "minDate", getDate( this ) );
+                }),
+            to = $( "#to" ).datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 2,
+                dateFormat: 'yy년mm월dd일',
+                showAnim: "slide",
+                showButtonPanel: true,
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],	//한글 캘린더중 월 표시를 위한 부분
+                monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],	//한글 캘린더 요일 표시 부분
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],	//한글 요일 표시 부분
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],	// 한글 요일 표시 부분
+                showMonthAfterYear: true,
+                yearSuffix: '년',
+            })
+            .on( "change", function() {
+                from.datepicker( "option", "maxDate", getDate( this ) );
+            });
+        
+            function getDate( element ) {
+            var date;
+            try {
+                date = $.datepicker.parseDate( dateFormat, element.value );
+            } catch( error ) {
+                date = null;
+            }
+            return date;
+            }
+
+
+            // ==================================================dialog
+            $("#dialog").dialog({
+                title: "코딩 속 숨어있는 코너",
+                autoOpen:false,
+                buttons:{
+                    "확인":function(){
+                        $(this).dialog("close");
+                    },"취소":function(){
+                        $(this).dialog("close");
+                    }
+                },
+                 resizable:true,
+                 modal: true, 
+                // buttons: {
+                //     "8/17": function() { $(this).dialog('close'); alert("정답입니다 ㅎ")},
+                //     "1/25": function() { $(this).dialog('close'); alert("첫 입사 날짜입니다.")},
+                //     "3/1": function() { $(this).dialog('close'); alert("삼일절 입니다.")},
+                // }
+            });
+
+            $("#btn").on("click",function(){
+                $("#dialog").dialog("open");
+            });
+
+            
+            $('#userMail').change(function(){
+                $('#userMail option:selected').each(function(){
+                    if($(this).val()=='1'){
+                        $('#write_mail').val(''); //초기화
+                        $('#write_mail').attr('disabled',false);
+                    }else{
+                        $("#write_mail").val($(this).text()); //선택값 입력 
+                        $("#write_mail").attr("disabled",true); //비활성화
+                    }
+                });
+            });
+
+
+            // ================================================== accordion
+            $('#accordion').accordion();
+
+
+
+
+
+
+
+            
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box box1">translate(이동)</div>
+        <div class="box box1-2">translate(이동)</div>
+        <div class="box box2">scale(크기)</div>
+        <div class="box box2-2">scale(크기)</div>
+        <div class="box box4">skew(기울기)</div>
+        <div class="box box5">transition</div>
+        <div class="box box7">animation</div>
+        <div class="box box8">animation</div>
+        <div class="box9">hover btn</div>
+        <div class="color_hv">
+            <span>hover me</span>
+        </div>
+        <div class="ham">
+            <span class="first"></span>
+            <span class="second"></span>
+            <span class="third"></span>
+        </div>
+        <div class="ham2">
+            <span class="first"></span>
+            <span class="second"></span>
+            <span class="third"></span>
+        </div>
+        <div class="menu_wrap">
+            <div class="menu1">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        
+        <div class="bf">
+            <div class="backface">
+                <div class="face front">front</div>
+                <div class="face back">back</div>
+            </div>
+        </div>
+        <div class="border_hv">
+                <div class="first">box1</div>
+                <div class="second">box2</div>
+                <div class="third">box3</div>
+                <br/><br/><br/>
+                <div class="box04">box4</div>
+                <div class="box05">box5</div>
+                <div class="box06">box6</div>
+        </div>
+        
+        <div class="border_hv2">
+            <ul>
+                <li class="type1 on"><a href="">type1</a></li>
+                <li class="type1 "><a href="">type1</a></li>
+            </ul>
+            <ul>
+                <li class="type2 on"><a href="">type2</a></li>
+                <li class="type2"><a href="">type2</a></li>
+            </ul>
+            <ul>
+                <li class="type3 on"><a href="">type3</a></li>
+                <li class="type3"><a href="">type3</a></li>
+            </ul>    
+        </div>
+
+        <div class="tran_hv">
+            <div class="img_area">
+                <a href="">
+                    <!--이미지 삽입-->이미지
+                </a>
+                <div class="hover_area">
+                    <p>txt</p>
+                </div>
+            </div>
+        </div>
+        <div class="shadow">
+            <div class="sd1">shadow1</div>
+            <div class="sd2">shadow2</div>
+        </div>
+        <div class="guide">
+            <div class="triangle1"></div>
+            <div class="triangle2"></div>
+            <div class="triangle3"></div>
+            <div class="triangle4"></div>
+            <div class="triangle5"></div>
+            <div class="triangle6"></div>
+        </div>
+        <div class="guide each">
+            <p>scss each</p>
+            <div class="red">e</div>
+            <div class="blue">a</div>
+            <div class="green">c</div>
+            <div class="yellow">h</div>
+        </div>
+    </div>
+
+
+<!--============= jQuery UI ================-->
+
+
+    <div id="accordion">
+        <h3>Section 1</h3>
+        <div>
+        <p>
+        Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+        </p>
+        </div>
+        <h3>Section 2</h3>
+        <div>
+        <p>
+        Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+        purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+        velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+        suscipit faucibus urna.
+        </p>
+        </div>
+        <h3>Section 3</h3>
+        <div>
+        <p>
+        Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+        Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+        ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+        lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+        </p>
+        <ul>
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+        </ul>
+        </div>
+        <h3>Section 4</h3>
+        <div>
+        <p>
+        Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+        et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+        faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+        mauris vel est.
+        </p>
+        <p>
+        Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+        inceptos himenaeos.
+        </p>
+        </div>
+    </div>
+
+    <div class="dateBox">
+        <p>Date: <input type="text" id="date"></p>
+        <p>Date: <input type="text" id="ico_date"></p>
+        <div>
+            <span>마치 항공권 예매하듯&nbsp;</span>
+            <label for="from">From</label>
+            <input type="text" id="from" name="from">
+            <label for="to">to</label>
+            <input type="text" id="to" name="to">
+        </div>
+    </div>
+    <div class="popup">
+        <button type="button" id="btn">눌러서 맛보기</button>
+        <div id="dialog" title="Basic dialog">
+            <p>메일메메일일</p>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" class="name" id="name"/>
+            </div>
+            <div>
+                <label for="password">password:</label>
+                <input type="password" class="password" id="password"/>
+            </div>
+            <div>
+                <label for="mail">E-mail:</label>
+                <input type="text" class="mail" id="mail"/>@
+            <input type="text" class="mail" id="write_mail" value=""/>
+            <select class="userMail" id="userMail">
+                <option value="1">직접입력</option>
+                <option value="naver.com">naver.com</option>
+                <option value="daum.net">daum.net</option>
+                <option value="nate.com">nate.com</option>
+                <option value="onlinepowers.com">onlinepowers.com</option>
+            </select>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>
