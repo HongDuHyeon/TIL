@@ -55,4 +55,8 @@
  
  <a href="https://velog.io/@hongduhyeon/javascript-Templete-Literal">javascript - Templete Literal</a>
  
+  ## ✅ javascript 06 배열 내장 함수
+ 
+  - <a href="https://velog.io/@hongduhyeon/javascript-6.-%EB%B0%B0%EC%97%B4-%EB%82%B4%EC%9E%A5-%ED%95%A8%EC%88%98-forEach">javascript 06 배열 내장 함수 forEach</a>
+ 
  ##### 기초 자바스크립트가 완료되면 폴더로 뺄 예정
