@@ -67,7 +67,7 @@
   - <a href="https://velog.io/@hongduhyeon/javascript-07-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%EA%B3%BC-%ED%81%B4%EB%9E%98%EC%8A%A4-%EA%B0%9D%EC%B2%B4-%EC%83%9D%EC%84%B1%EC%9E%90">javascript 07 프로토타입 객체 생성자</a>
    - <a href="https://velog.io/@hongduhyeon/javascript-07-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%EA%B3%BC-%ED%81%B4%EB%9E%98%EC%8A%A4-%EA%B0%9D%EC%B2%B4-%EC%83%9D%EC%84%B1%EC%9E%90-%EC%83%81%EC%86%8D%EB%B0%9B%EA%B8%B0">javascript 07 프로토타입 객체 생성자 상속</a>
   - <a href="https://velog.io/@hongduhyeon/javascript-07-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%EA%B3%BC-%ED%81%B4%EB%9E%98%EC%8A%A4-es6-%ED%81%B4%EB%9E%98%EC%8A%A4">javascript 07 클래스 (class) </a>
- 
+  - <a href="https://velog.io/@hongduhyeon/javascript-07-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%EA%B3%BC-%ED%81%B4%EB%9E%98%EC%8A%A4-es6-%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%98%88%EC%A0%9C">javascript 07 클래스 예제 (Food class)</a>
  
  
  ##### 기초 자바스크립트가 완료되면 폴더로 뺄 예정
