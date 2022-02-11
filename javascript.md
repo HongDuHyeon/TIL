@@ -1,5 +1,3 @@
-# TIL
- 🔥Today I Learned🔥
 
 ## ✅ javascript 01 변수와 상수
 
