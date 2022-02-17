@@ -10,3 +10,5 @@
  - <a href="https://velog.io/@hongduhyeon/javascript-rest">rest</a>
 ## ✅ javascript - 비동기 처리
  - <a href ="https://velog.io/@hongduhyeon/javascript-%EB%B9%84%EB%8F%99%EA%B8%B0-%EC%B2%98%EB%A6%AC">비동기 처리</a>
+## ✅ javascript - Promise
+ - <a href="https://velog.io/@hongduhyeon/javascript-Promise"></a>
