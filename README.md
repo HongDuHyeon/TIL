@@ -1,5 +1,5 @@
 # TIL
  🔥Today I Learned🔥
 
-## ✅ React란?
- - <a href="https://velog.io/@hongduhyeon/whyReact">React란?</a>
+## ✅ semantic web / semantic tags
+ - <a href="https://velog.io/@hongduhyeon/websemantic-web-semantic-tags">semantic web / semantic tags</a>
