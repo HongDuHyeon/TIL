@@ -11,3 +11,4 @@
 
 ## ✅ DOM과 Event 
  - <a href="https://velog.io/@hongduhyeon/javascript-DOM-Event">DOM과 Event</a>
+ - <a href="https://velog.io/@hongduhyeon/javascript-Event-value-write"> Event 종류, 작성</a>
