@@ -1,16 +1,14 @@
 # TIL
  🔥Today I Learned🔥
 
-## ✅ semantic web / semantic tags 
- - <a href="https://velog.io/@hongduhyeon/websemantic-web-semantic-tags">semantic web / semantic tags</a>
-
-## ✅ Replit 검색해봤던 문제
- - <a href="https://velog.io/@hongduhyeon/Replit-js-mix-min-random">최소값과 최대값 사이에서 랜덤수 뽑기</a>
- - <a href="https://velog.io/@hongduhyeon/Replit-js-Object">object</a>
- - <a href="https://velog.io/@hongduhyeon/Replit-js-object-for-in">object / for~in</a>
-
-## ✅ DOM과 Event 
- - <a href="https://velog.io/@hongduhyeon/javascript-DOM-Event">DOM과 Event</a>
- - <a href="https://velog.io/@hongduhyeon/javascript-Event-value-write"> Event 종류, 작성</a>
-## ✅ git / cli
- - <a href="https://velog.io/@hongduhyeon/Git-CLI">git / cli 명령어 정리</a>
+## ✅ React
+- <a href="https://velog.io/@hongduhyeon/React-SPA">SPA란 ?</a>
+- <a href="https://velog.io/@hongduhyeon/React-LifeCycle-API">LifeCycle API</a>
+- <a href="https://velog.io/@hongduhyeon/React-props-state">props</a>
+- <a href="https://velog.io/@hongduhyeon/React-state">state</a>
+- <a href="https://velog.io/@hongduhyeon/React-React-Router">React-router</a>
+## ✅ error case
+- <a href="https://velog.io/@hongduhyeon/React-a-tag-error">a 태그 사용시 href error</a>
+- <a href="https://velog.io/@hongduhyeon/React-map-key-props-index">map 함수 작성시 key props 부여하는 이유</a>
+## ✅ SASS 사용법
+- <a href="https://velog.io/@hongduhyeon/Sass-Sass-%EC%82%AC%EC%9A%A9%EB%B2%95">SASS 사용법</a>
