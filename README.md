@@ -1,5 +1,7 @@
 # TIL
- 🔥Today I Learned🔥
+ ~~🔥Today I Learned🔥~~ <br/>
+ TIL은 [블로그](https://velog.io/@hongduhyeon/posts)로 이관합니다 :)
+
 
 ## ✅ React
 - <a href="https://velog.io/@hongduhyeon/React-SPA">SPA란 ?</a>
